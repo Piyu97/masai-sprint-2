@@ -1,0 +1,71 @@
+body,html{
+    height: 100%;
+    color: white;
+}
+.heading{
+    font-size: 20px;
+    text-align: center;
+}
+#center{
+    text-align: center;
+    justify-content: center;
+    margin:0px 150px 0px 150px;
+    
+}
+#img2{
+    height: 300px;
+    width: 300px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 140px 1000px 140px;
+    grid-template-rows: 100%;
+}
+.class1{
+    height: 100px;
+    width: 100%;
+    border:5px solid black;
+    background-color: maroon;
+}
+.class1>div:nth-of-type(n+2)
+{
+    float: right;
+    margin-right: 30px;
+    background-color: white;
+}
+#img1{
+    height:60px;
+}
+.background{
+    background-image:url(https://cdn.cnn.com/cnnnext/dam/assets/161031115151-italy-massive-earthquake-pleitgen-pkg-00010424-super-169.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    color:white;
+    font-size: 15px;
+}
+.footer{
+    /* height: 20px; */
+    width: 100%;
+    background-color: black;  
+    color:white; 
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 100px; 
+}
+.footer>div{
+    padding:30px;
+    margin-left: 50px;
+
+}
+.class2{
+    width: 150px;
+    background-color: rgba(63, 10, 10, 0.877);
+    height: 100%;
+    float:left;
+}
+.class3{
+    width: 150px;
+    background-color:rgba(63, 10, 10, 0.877);
+    height: 100%;
+    float:right;
+}
