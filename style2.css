@@ -1,16 +1,21 @@
 body,html{
     height: 100%;
 }
+
+a{
+    color:white;
+    text-decoration: none;
+}
 .class1{
     height: 90px;
     width: 100%;
-    background-color:maroon;
+    background-color:maroon
 }
 .class1>div:nth-of-type(n+2)
 {
     float: right;
     margin-right: 30px;
-    background-color: white;
+    /* background-color: white; */
 }
 .class1>div:nth-of-type(2){
     margin-bottom: 40px;
@@ -32,7 +37,7 @@ body,html{
 }
 .type>div{
     margin-left: 20px;
-    color: white;
+    /* color: white; */
 }
 .type1{
     display: grid;
@@ -42,14 +47,14 @@ body,html{
 }
 .type1>div{
     margin-left: 100px;
-    color: white;
+    /* color: white; */
 }
 .heading{
     font-size: 25px;
     text-align: center;
     padding:20px;
     text-decoration-line: underline;
-    color: white;
+    /* color: white; */
 }
 .footer{
     /* height: 20px; */
@@ -66,10 +71,11 @@ body,html{
 
 }
 .center{
-    background-image:url(https://cdn.cnn.com/cnnnext/dam/assets/161031115151-italy-massive-earthquake-pleitgen-pkg-00010424-super-169.jpg);
+    background-image:url(https://spaceplace.nasa.gov/earthquakes/en/earthquakes3.en.png);
     background-attachment: fixed;
     background-size: 100%;
-
+    color:black;
+    font-weight: bold;
 }
 .grid{
     display: grid;
@@ -78,13 +84,13 @@ body,html{
 }
 .class4{
     width: 150px;
-    background-color: rgba(63, 10, 10, 0.877);
+    background-color: lightseagreen;
     height: 100%;
     float:left;
 }
 .class3{
     width: 150px;
-    background-color:rgba(63, 10, 10, 0.877);
+    background-color: lightseagreen;
     height: 100%;
     float:right;
 }

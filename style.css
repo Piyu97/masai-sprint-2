@@ -1,52 +1,71 @@
 body,html{
     height: 100%;
-    color: white;
+    color: black;
+}
+
+a{
+    color:white;
+    text-decoration: none;
 }
 
 table,tr,td,th{
-    border: 3px solid black;
+border: 3px solid black;
 padding: 10px;
-margin-left:300px;
+margin-left:250px;
 font-size: 15px;
+margin-top: 20px;
 }
+
 table{
     width:500px;
 }
+
 figcaption{
     text-align: center;
-background-color:white;
+/* background-color:white; */
 }
+
 .heading{
     font-size: 25px;
     text-align: center;
     padding:20px;
     text-decoration-line: underline;;
 }
+
 #img2{
     height: 400px;
     width: 100%;
     border:3px solid black;
+    border-radius: 100%;
 }
+
 #img3{
     height: 300px;
     width: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
+
 .grid{
     display: grid;
     grid-template-columns: 140px 1000px 140px;
     grid-template-rows: 100%;
 }
+
 .class1{
     height: 90px;
     width: 100%;
     background-color:maroon;
 }
+
+
 .class1>div:nth-of-type(n+2)
 {
     float: right;
     margin-right: 30px;
-    background-color: white;
+    /* background-color: white; */
 }
+
 .class1>div:nth-of-type(2){
     margin-bottom: 40px;
 }
@@ -56,28 +75,35 @@ background-color:white;
     margin-top: 10px;
     width:90px;
 }
+
 .class2{
     width: 150px;
-    background-color: rgba(63, 10, 10, 0.877);
+    background-color: lightseagreen;
     height: 100%;
     float:left;
 }
+
+
 .class3{
     width: 150px;
-    background-color:rgba(63, 10, 10, 0.877);
+    background-color: lightseagreen;
     height: 100%;
     float:right;
 }
+
 .class4{
-    background-image:url(https://cdn.cnn.com/cnnnext/dam/assets/161031115151-italy-massive-earthquake-pleitgen-pkg-00010424-super-169.jpg);
+    background-image:url(https://spaceplace.nasa.gov/earthquakes/en/earthquakes3.en.png);
     background-attachment: fixed;
     background-size: 100%;
-
+    color:black;
+    font-weight: bold;
 }
+
 .class5{
     display:flex;
     flex-direction: row;
 }
+
 .class5>div{
     flex-direction: row;
     padding:1px;
@@ -86,52 +112,8 @@ background-color:white;
 }
 
 .video{
-    width: 100%;    
+    width: 80%;    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer{
     /* height: 20px; */

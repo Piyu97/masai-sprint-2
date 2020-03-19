@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="gr__"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style>
+        *{
+            font-size: 15px;
+        }
+          .form{
+              width: 300px;
+              height: 300px;
+              border: 1px solid black;
+          }
+          .form>div{
+              margin: 30px 0px 30px 0px;
+          }
+          .form>button{
+              text-align: center;
+              background-color: black;
+              color: white;
+              margin-left: 60px;
+          }
+    </style>
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <div class="form">
+        <div>
+            <label>Username:</label>
+            <input type="text" id="Uname" placeholder="Enter your name" value="piyush">
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="text" id="Pname" placeholder="Enter your Password" value="jain">
+        </div>
+        <button id="btn" onclick="login()">LOGIN</button>
+    </div>
+
+<script>
+    var div1=document.querySelector('div')
+    div1.setAttribute('class','form')
+    var btn=document.querySelector('button')
+    btn.setAttribute('id','btn')
+    var k=0
+    var AOO=[]
+        function login(){
+            var name=document.getElementById('Uname').value;
+            var pswd=document.getElementById('Pname').value;
+            var users={
+            piyush:"jain",
+            piyush1:"jain",
+            surya:"teja"
+        };
+        var flag=0;
+        var logins={};
+        for(key in users)
+        { 
+
+            if((users[key]===pswd)&&(key===name))
+            {        
+                console.log("Correct Credentials");
+                AOO[0]=document.getElementById('Uname').value;
+                AOO[1]=document.getElementById('Pname').value;
+                logins[k]=AOO
+                ++k
+                flag=1;
+                break;
+            }
+        }
+        if(flag==0)
+        {
+            console.log("Wrong Credentials")
+        }
+        else 
+        {
+            Dashpage(name);
+        }
+        console.log(AOO)
+        document.getElementById('Uname').value="";
+        document.getElementById('Pname').value="";
+        // var database
+        // var json = JSON.stringify(logins)
+        //    console.log(json)
+        // var done=JSON.parse(json)
+        // console.log(done)
+
+    }
+        // function Dashpage(name){
+        //         localStorage.setItem('correctName',document.getElementById('Uname').value)
+        //         location="file:///home/piyush/coding/week_5/day_3/session1/dash.html"
+        // }
+
+</script>
+</body></html>
